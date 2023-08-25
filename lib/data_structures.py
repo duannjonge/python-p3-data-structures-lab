@@ -17,13 +17,23 @@ spicy_foods = [
 ]
 
 def get_names(spicy_foods):
-    pass
+    for food in spicy_foods:
+        print(food["name"])
 
-def get_spiciest_foods(spicy_foods):
-    pass
+get_names(spicy_foods)
+
+def get_spiciest_foods(spicy_foods,foodone):
+   for food in spicy_foods:
+       if food["cuisine"]==foodone:
+           print(food)
+
+get_spiciest_foods(spicy_foods,"American")
 
 def print_spicy_foods(spicy_foods):
-    pass
+     for food in spicy_foods:
+        if food["heat_level"]>5:
+            print(food)
+print_spicy_foods(spicy_foods)
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
     pass
